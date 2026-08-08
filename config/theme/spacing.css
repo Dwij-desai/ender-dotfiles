@@ -1,0 +1,9 @@
+/* ==========================================================
+   EnderOS Spacing Scale
+   ========================================================== */
+
+@define-color space-xs 4px;
+@define-color space-sm 8px;
+@define-color space-md 12px;
+@define-color space-lg 16px;
+@define-color space-xl 24px;

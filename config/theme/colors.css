@@ -1,0 +1,19 @@
+/* ==========================================================
+   EnderOS Design Tokens
+   Colors
+   ========================================================== */
+
+@define-color bg #17191C;
+@define-color surface #202329;
+@define-color surface-alt #2A2E35;
+
+@define-color border #3A4048;
+
+@define-color text #E8E8E8;
+@define-color text-muted #9AA0A8;
+
+@define-color accent #66D9EF;
+
+@define-color warning #F2C94C;
+@define-color critical #EB5757;
+@define-color success #27AE60;

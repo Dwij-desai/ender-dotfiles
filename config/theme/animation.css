@@ -1,0 +1,15 @@
+/* ==========================================================
+   EnderOS Motion
+   ========================================================== */
+
+/*
+Fast      120ms
+Normal    180ms
+Slow      250ms
+
+Timing:
+ease-out
+
+Never use bounce.
+Never use elastic motion.
+*/
