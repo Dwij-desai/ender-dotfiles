@@ -10,6 +10,8 @@ This repository contains the configuration, scripts, and assets that define the 
 - [Architecture](ARCHITECTURE.md)
 - [Components](COMPONENTS.md)
 - [Roadmap](ROADMAP.md)
+- [Engineering Principles](docs/ENGINEERING_PRINCIPLES.md)
+- [Decisions Log](docs/DECISIONS.md)
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 
