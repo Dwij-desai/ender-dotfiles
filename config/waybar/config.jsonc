@@ -42,17 +42,26 @@
     // Focused application title
     "hyprland/window": {
         "max-length": 60,
-        "separate-outputs": true
+        "separate-outputs": true,
+        "on-click": "$HOME/.config/waybar/scripts/modules/window.sh left"
     },
 
     // Processor usage
     "cpu": {
-        "format": "CPU {usage}%"
+        "format": "CPU {usage}%",
+        "tooltip-format": "Cores: {cores}\nUsage: {usage}%\nAvg freq: {avg_frequency} GHz\nLeft: Ender panel | Right: htop | Middle: top CPU",
+        "on-click": "$HOME/.config/waybar/scripts/modules/cpu.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/cpu.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/cpu.sh middle"
     },
 
     // Memory usage
     "memory": {
-        "format": "RAM {used:0.1f}G"
+        "format": "RAM {used:0.1f}G",
+        "tooltip-format": "RAM: {used:0.1f}G/{total:0.1f}G\nSwap: {swapUsed:0.1f}G/{swapTotal:0.1f}G\nAvailable: {avail:0.1f}G\nLeft: Ender panel | Right: htop | Middle: top RAM",
+        "on-click": "$HOME/.config/waybar/scripts/modules/memory.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/memory.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/memory.sh middle"
     },
 
     // Network connection status
@@ -60,28 +69,41 @@
         "format-wifi": "WiFi",
         "format-ethernet": "Ethernet",
         "format-disconnected": "OFF",
-        "tooltip-format-wifi": "Interface: {ifname}\nSignal: {signalStrength}%\nIP: {ipaddr}",
-        "tooltip-format-ethernet": "Interface: {ifname}\nSignal: Wired\nIP: {ipaddr}",
+        "tooltip-format-wifi": "Interface: {ifname}\nType: WiFi\nSSID: {essid}\nSignal: {signalStrength}%\nIP: {ipaddr}\nGateway: {gwaddr}\nUp: {bandwidthUpBits} | Down: {bandwidthDownBits}\nLeft: dashboard | Right: nmtui | Middle: copy IP",
+        "tooltip-format-ethernet": "Interface: {ifname}\nType: Ethernet\nSignal: Wired\nIP: {ipaddr}\nGateway: {gwaddr}\nUp: {bandwidthUpBits} | Down: {bandwidthDownBits}\nLeft: dashboard | Right: nmtui | Middle: copy IP",
         "tooltip-format-disconnected": "Network disconnected",
-        "on-click": "$HOME/.config/waybar/scripts/network-panel.sh",
-        "on-click-right": "$HOME/.config/waybar/scripts/network-nmtui.sh"
+        "on-click": "$HOME/.config/waybar/scripts/modules/network.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/network.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/network.sh middle"
     },
 
     // Audio volume
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 {volume}%",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "tooltip-format": "Output: {desc}\nVolume: {volume}%\nLeft: Ender panel | Right: switch output | Middle: mute mic",
+        "on-click": "$HOME/.config/waybar/scripts/modules/audio.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/audio.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/audio.sh middle"
     },
 
     // Battery charge state
     "battery": {
-        "format": "{capacity}%"
+        "format": "{capacity}%",
+        "tooltip-format": "State: {status}\nCharge: {capacity}%\nETA: {timeTo}\nPower: {power}W\nLeft: Ender panel | Right: profiles | Middle: toggle profile",
+        "on-click": "$HOME/.config/waybar/scripts/modules/battery.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/battery.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/battery.sh middle"
     },
 
     // Date and time
     "clock": {
-        "format": "{:%H:%M | %a %d %b}"
+        "format": "{:%H:%M | %a %d %b}",
+        "tooltip-format": "Timezone: {:%Z}\nISO: {:%Y-%m-%dT%H:%M:%S%z}\nWeek: {:%V}\nUTC: {:%Y-%m-%d %H:%MZ}\nLeft: Ender panel | Right: copy timestamp | Middle: toggle UTC view",
+        "on-click": "$HOME/.config/waybar/scripts/modules/clock.sh left",
+        "on-click-right": "$HOME/.config/waybar/scripts/modules/clock.sh right",
+        "on-click-middle": "$HOME/.config/waybar/scripts/modules/clock.sh middle"
     },
 
     // System tray icons

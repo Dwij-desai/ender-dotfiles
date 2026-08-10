@@ -3,4 +3,4 @@
 set -u
 
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-exec "$script_dir/launch-terminal.sh" "$script_dir/modules/network-panel.sh"
+exec "$script_dir/modules/clock.sh" "$@"
