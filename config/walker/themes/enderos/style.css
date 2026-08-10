@@ -1,0 +1,140 @@
+@import "../../../theme/tokens.css";
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+.window {
+  background: transparent;
+}
+
+.box-wrapper {
+  background: alpha(@surface, 0.96);
+  border: 1px solid @border;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.search-container {
+  border-bottom: 1px solid @border;
+  padding-bottom: 12px;
+}
+
+.search-label,
+.results-label {
+  color: @text-muted;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.search-input-row {
+  margin-top: 8px;
+  spacing: 8px;
+}
+
+.search-prompt {
+  color: @accent;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input {
+  color: @text;
+  caret-color: @text;
+  font-size: 16px;
+}
+
+.input selection {
+  background: @surface-alt;
+  color: @text;
+}
+
+.content-container {
+  spacing: 8px;
+}
+
+.placeholder,
+.elephant-hint,
+.preview-box {
+  color: @text-muted;
+}
+
+.scrollbar {
+  opacity: 0;
+}
+
+.list {
+  color: @text;
+}
+
+.item-box {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 12px;
+  transition: background 180ms ease-out, border-color 180ms ease-out;
+}
+
+.item-text {
+  color: @text;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-subtext {
+  color: @text-muted;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.item-image,
+.item-image-text {
+  color: @text-muted;
+  opacity: 0.65;
+  -gtk-icon-size: 16px;
+}
+
+child:selected .item-box,
+row:selected .item-box {
+  background: alpha(@surface-alt, 0.65);
+  border-color: @accent;
+}
+
+.item-quick-activation {
+  color: @text-muted;
+  border: 1px solid @border;
+  border-radius: 0;
+  padding: 2px 4px;
+}
+
+.preview {
+  border-left: 1px solid @border;
+  color: @text;
+  padding-left: 16px;
+}
+
+.keybinds {
+  border-top: 1px solid @border;
+  color: @text-muted;
+  font-size: 11px;
+  padding-top: 12px;
+}
+
+.keybind-label {
+  border: 1px solid @border;
+  border-radius: 0;
+  padding: 2px 4px;
+}
+
+.keybind-bind,
+.keybind-button {
+  color: @text-muted;
+}
+
+.error {
+  background: @critical;
+  color: @text;
+  padding: 10px;
+}

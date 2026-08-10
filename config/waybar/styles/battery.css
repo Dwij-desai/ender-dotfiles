@@ -1,0 +1,14 @@
+/* ==========================================================
+   EnderOS Battery
+   ========================================================== */
+
+#battery {
+}
+
+#battery.warning {
+    color: @warning;
+}
+
+#battery.critical {
+    color: @critical;
+}

@@ -1,0 +1,26 @@
+.control-center {
+    background: transparent;
+}
+
+.control-center .control-center-list {
+    background: alpha(@surface, 0.98);
+    border: 1px solid @border;
+    border-radius: 4px;
+    box-shadow: none;
+    color: @text;
+    margin: 12px;
+    padding: 16px;
+}
+
+.control-center .control-center-list-placeholder {
+    color: @text-muted;
+    font-size: 12px;
+}
+
+.control-center .notification-row .notification-background {
+    margin: 4px 0;
+}
+
+.control-center .notification-row .notification-background .notification {
+    border-radius: 0;
+}

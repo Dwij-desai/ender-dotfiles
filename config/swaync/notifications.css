@@ -1,0 +1,80 @@
+.notification-row {
+    outline: none;
+}
+
+.notification-row .notification-background {
+    background: transparent;
+    box-shadow: none;
+    margin: 4px 0;
+}
+
+.notification-row .notification-background .notification {
+    background: alpha(@surface, 0.96);
+    border: 1px solid @border;
+    border-radius: 4px;
+    box-shadow: none;
+    color: @text;
+    padding: 12px;
+}
+
+.notification-row .notification-background .notification:hover {
+    background: @surface-alt;
+    border-color: @accent;
+}
+
+.notification-content .app-name {
+    color: @text-muted;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.notification-content .summary {
+    color: @text;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.notification-content .body {
+    color: @text-muted;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.notification-content .time {
+    color: @text-muted;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.notification-row .notification-background .notification .app-icon {
+    -gtk-icon-size: 20px;
+    color: @text-muted;
+    opacity: 0.7;
+}
+
+.notification-row .notification-background .notification.critical {
+    border-color: @critical;
+}
+
+.notification-row .notification-background .notification.warning {
+    border-color: @warning;
+}
+
+.notification-row .notification-background .notification.success {
+    border-color: @success;
+}
+
+.close-button {
+    background: transparent;
+    border: 1px solid @border;
+    border-radius: 0;
+    color: @text-muted;
+}
+
+.close-button:hover {
+    border-color: @critical;
+    color: @critical;
+}

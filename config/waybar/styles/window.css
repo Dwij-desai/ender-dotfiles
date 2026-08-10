@@ -1,0 +1,16 @@
+/* ==========================================================
+   EnderOS Window Title
+   ========================================================== */
+
+#window {
+    background: transparent;
+    border-color: transparent;
+    padding: 0 8px;
+    color: @text-muted;
+    font-size: 12px;
+}
+
+#window:hover {
+    background: transparent;
+    border-color: transparent;
+}

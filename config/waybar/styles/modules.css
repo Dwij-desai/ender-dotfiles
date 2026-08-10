@@ -1,0 +1,35 @@
+/* ==========================================================
+   EnderOS — Module Styling
+   ========================================================== */
+
+#workspaces,
+#window,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    background: alpha(@surface, 0.90);
+    color: @text;
+    border: 1px solid @border;
+    border-radius: 4px;
+    padding: 0 12px;
+    margin: 4px 2px;
+    min-height: 28px;
+    font-weight: 500;
+}
+
+#workspaces:hover,
+#window:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#clock:hover,
+#tray:hover {
+    background: @surface-alt;
+    border-color: @accent;
+}
