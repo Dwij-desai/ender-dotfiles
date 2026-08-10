@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose an enhancement aligned with EnderOS principles.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Which workflow friction does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the smallest viable implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture Impact
+      description: Which components are touched and why?
+    validations:
+      required: true
